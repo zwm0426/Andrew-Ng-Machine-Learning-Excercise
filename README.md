@@ -47,3 +47,23 @@ Score(成绩) 100% </br>
 |5|	Compute cost for multiple variables	|0 / 0
 |6|	Gradient descent for multiple variables	|0 / 0
 |7|	Normal equations	|0 / 0
+
+**machine-learning-ex2**
+
+Submitted on 9 March 2019 at 1:20 AM</br>
+提交时间 9 March 2019 在 1:20 AM
+
+Score(成绩) 100% </br>
+
+|Part</br>部分|Name</br>名称|Socre</br>分数|
+| :-:   | :-----:  | :----: |
+1|	Sigmoid function|	5 / 5
+2|	Compute cost for logistic regression|	30 / 30
+3|	Gradient for logistic regression|	30 / 30
+4|	Predict function	|5 / 5
+5|	Compute cost for regularized LR	|15 / 15
+6|	Gradient for regularized LR	|15 / 15
+
+
+
+

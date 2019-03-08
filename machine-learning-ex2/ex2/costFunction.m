@@ -20,11 +20,35 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+% Cost (calculating J)
+%for i = 1 : m
+%    J = J + (- y(i) * log(sigmoid(X(i))) - (1 - y(i))* log(1 - sigmoid(X(i))));
+%end;
+
+%J = J / m; 
+h = sigmoid(X*theta);
+% why (X*theta), isn't it theta'*X(?, not fit in dimensions)
+J = (-y'*log(h) - (1-y)' * log(1-h)) / m;
+%J = (-y'*log(h)-(1-y)'*log(1-h))/m;
+
+% Grad (calculating the partial derivatives)
+
+% gradTemp = zeros(size(theta));
+% 
+% 
+% for j = 1 : size(theta)
+%     temp  = 0;
+%     for i = 1 : m
+%         temp = temp + (sigmoid(X(i)) - y(i)) * X(i); %X(j)? right?
+%     end
+%     gradTemp(j) = temp / m;
+% end
+% 
+% grad = gradTemp;
+%     
 
 
-
-
-
+grad = X'*(h-y)/m;
 
 
 % =============================================================

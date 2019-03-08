@@ -12,7 +12,13 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
+% Find the index of Positive examples and Negetive examples
+pos = find(y == 1);
+neg = find(y == 0);
 
+% Plot with coordinates (with styled - cpoied from the introduction documentation)
+plot(X(pos,1),X(pos,2),'k+','LineWidth', 2, 'MarkerSize', 7);
+plot(X(neg,1),X(neg,2),'ko','MarkerFaceColor', 'y','MarkerSize', 7);
 
 
 

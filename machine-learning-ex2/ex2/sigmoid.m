@@ -10,7 +10,11 @@ g = zeros(size(z));
 %               vector or scalar).
 
 
+% As for z is a scalar: 
+% g = 1 / (1 + exp(-z));
 
+% As for z is a scalar/ vector / matrix:
+ g = 1 ./ (1 + exp(-z)); % './' means use division for single element in the matrix
 
 
 % =============================================================
